@@ -1,9 +1,32 @@
 /* ============================================================
    DATA QUALITY CHECKS — BRONZE & SILVER LAYER
-   Purpose: Validate data before loading Silver Layer
    ============================================================ */
 
+Script Purpose:
+    This script performs a comprehensive set of Data Quality Checks
+    on the Bronze Layer before loading the Silver Layer.
 
+    These checks ensure:
+        - No duplicate or missing primary keys
+        - No unwanted spaces in string fields
+        - Standardized and consistent categorical values
+        - Valid and logical date ranges
+        - Correct business rules (e.g., sales = quantity * price)
+        - Clean and reliable data for Silver ETL
+
+When to Run:
+    - Run this script BEFORE executing:
+          EXEC silver.load_silver;
+    - Use it to detect anomalies, inconsistencies, or invalid records
+      that may affect the Silver Layer.
+
+Notes:
+    - This script does NOT modify data.
+    - It only reports issues for investigation.
+    - All fixes should be applied in the Bronze Layer.
+
+===========================================================
+*/
 /* ============================================================
    SECTION 1 — CRM PRODUCT CHECKS
    ============================================================ */
