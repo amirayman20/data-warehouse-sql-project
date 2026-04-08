@@ -3,8 +3,47 @@ AS
 BEGIN
 
 /* ============================================================
-   SILVER LAYER ETL — WITH ERROR HANDLING & TIME TRACKING
+   Stored Procedure: silver.load_silver
+   Layer: Bronze  →  Silver
+   Author: Amir
+   Last Updated: 2026-04-08
+   ============================================================
+
+   Purpose:
+       This stored procedure performs the full ETL process to load
+       the Silver Layer from the Bronze Layer.
+
+   What This Procedure Does:
+       ✔ Truncates all Silver tables
+       ✔ Cleans & standardizes Bronze data
+       ✔ Applies business rules & transformations
+       ✔ Loads curated data into Silver schema
+       ✔ Logs start/end time for each step
+       ✔ Handles errors per step (TRY/CATCH)
+       ✔ Tracks total ETL duration
+
+   Tables Loaded:
+       - silver.crm_cust_info
+       - silver.crm_prd_info
+       - silver.crm_sales_details
+       - silver.erp_cust_az12
+       - silver.erp_loc_a101
+       - silver.erp_px_cat_g1v2
+
+   Usage:
+       EXEC silver.load_silver;
+
+   Notes:
+       - This procedure does NOT accept parameters.
+       - Designed for Production‑Ready ETL pipelines.
+       - All transformations follow Data Quality rules defined
+         in: 01_bronze_data_quality_checks.sql
+
    ============================================================ */
+
+---------------------------------------------------------------
+-- PROCESS START
+---------------------------------------------------------------
 
 DECLARE @process_start DATETIME = GETDATE();
 PRINT '============================================================';
