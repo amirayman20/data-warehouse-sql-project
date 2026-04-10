@@ -1,37 +1,82 @@
 # SQL Data Warehouse Project (Medallion Architecture)
 
-This repository contains my first end‑to‑end SQL Data Warehouse project.  
-I am building this project step by step to strengthen my skills in data engineering, SQL development, and analytical data modeling.
+Hey, I’m **Amir** — a pharmacist transitioning into **Data Analysis**, building real end‑to‑end projects to strengthen my skills in **SQL, ETL, data engineering, and analytics**.
 
-The project follows the Medallion Architecture (Bronze → Silver → Gold) to ensure clean, structured, and business‑ready data.
+This repository showcases my work in designing and implementing a complete **SQL Data Warehouse** using the **Medallion Architecture (Bronze → Silver → Gold)**, with a focus on clean pipelines, structured modeling, and analytical reporting.
 
 ---
 
-## 🏗️ Data Architecture (Medallion)
+## 👨‍💻 About Me
 
-### 🟫 Bronze Layer — Raw Data
-Stores the raw data exactly as received from the source systems (CSV files).  
+I’m **Amir**, originally a pharmacist, and I’m just starting to shift my career into **Data Analysis**.  
+I’m learning step-by-step and building practical projects to grow my skills in SQL, data cleaning, ETL, and analytical workflows.
+
+---
+
+## 🏗️ End‑to‑End Data Architecture
+
+Below are the diagrams used throughout the project:
+
+### **1️⃣ Data Integration Diagram**
+![Data Integration](docs/data_integration_diagram.png)
+
+### **2️⃣ High‑Level Architecture**
+![High Level Architecture](docs/high_level_architecture.png)
+
+### **3️⃣ Data Flow Lineage**
+![Data Flow Lineage](docs/data_flow_lineage.png)
+
+### **4️⃣ ETL Methods Overview**
+![ETL Methods](docs/etl_methods.png)
+
+### **5️⃣ Bronze / Silver / Gold Layers**
+![Medallion Layers](docs/bronze_silver_gold_layers_v2.png)
+
+### **6️⃣ Data Consumption (BI & Analytics)**
+![Data Consumption](docs/data_consumption_bi_analytics_v2.png)
+
+---
+
+## 🟫 Bronze Layer — Raw Data
+
+The Bronze layer stores raw data exactly as received from the source systems (CSV files).  
 No cleaning or transformations are applied at this stage.
 
-### 🥈 Silver Layer — Cleaned Data
-This layer includes all data quality and standardization steps:
+**Includes:**
+- Raw CRM data  
+- Raw ERP data  
+- Initial ingestion scripts  
+
+---
+
+## 🥈 Silver Layer — Cleaned & Standardized Data
+
+This layer applies all data quality steps to prepare the data for modeling.
+
+**Processes include:**
 - Data type corrections  
 - Duplicate removal  
 - Missing value handling  
 - Outlier treatment  
-- Basic transformations  
+- Standardization & normalization  
 
-### 🥇 Gold Layer — Business Layer
-Contains the final analytical model prepared for reporting:
+---
+
+## 🥇 Gold Layer — Business‑Ready Data
+
+The Gold layer contains the final analytical model.
+
+**Includes:**
 - Fact tables  
 - Dimension tables  
-- KPIs and metrics  
-- Aggregated data for analysis  
+- KPIs & metrics  
+- Aggregated analytical views  
 
 ---
 
 ## 📊 Project Goals
-- Build a structured SQL-based data warehouse  
+
+- Build a structured SQL‑based data warehouse  
 - Apply Medallion Architecture in a real project  
 - Practice ETL logic using SQL  
 - Design a clean star schema for analytics  
@@ -40,6 +85,7 @@ Contains the final analytical model prepared for reporting:
 ---
 
 ## 🛠️ Tools & Technologies
+
 - SQL Server  
 - SQL Server Management Studio (SSMS)  
 - Git & GitHub  
@@ -48,6 +94,8 @@ Contains the final analytical model prepared for reporting:
 ---
 
 ## 📂 Repository Structure
+
+```
 data-warehouse-project/
 │
 ├── datasets/          # Raw CSV files
@@ -55,9 +103,21 @@ data-warehouse-project/
 ├── scripts/           # SQL scripts for Bronze, Silver, and Gold layers
 ├── tests/             # Data quality checks
 └── README.md          # Project overview
+```
 
 ---
 
 ## 📌 Project Status
+
 This is my working version of the project.  
 I will continue updating the repository as I progress through each layer and add more documentation, diagrams, and SQL scripts.
+
+---
+
+## 📬 Connect With Me
+
+[LinkedIn](https://www.linkedin.com/in/amir-ayman-664513103/)  
+[GitHub](https://github.com/amirayman20)  
+📧 Email: **amirayman20@gmail.com**
+
+---
