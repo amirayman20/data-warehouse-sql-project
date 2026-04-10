@@ -116,8 +116,16 @@ I will continue updating the repository as I progress through each layer and add
 
 ## 📬 Connect With Me
 
-[LinkedIn](https://www.linkedin.com/in/amir-ayman-664513103/)  
-[GitHub](https://github.com/amirayman20)  
-📧 Email: **amirayman20@gmail.com**
+<p align="left">
+  <a href="https://www.linkedin.com/in/amir-ayman-664513103/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
 
----
+  <a href="https://github.com/amirayman20" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  </a>
+
+  <a href="mailto:amirayman20@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
